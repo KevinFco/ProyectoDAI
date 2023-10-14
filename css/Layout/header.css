@@ -4,8 +4,8 @@
     background: url(../../imgs/banner.png);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: min(160vh);
+    width: 100vw;
+    height: min(100vh, 120vh, 160vh);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
