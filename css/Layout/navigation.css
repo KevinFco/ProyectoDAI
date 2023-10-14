@@ -14,3 +14,11 @@
 .top-nav{
     margin: auto;
 }
+
+@media (max-width: 768.98px){
+
+    .top-nav{
+        display: none;
+    }
+
+}
