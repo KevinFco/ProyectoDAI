@@ -7,11 +7,6 @@
     margin: 0 auto;
 }
 
-.hero-section-container{
-    display: grid;
-    
-}
-
 .hero-btn-container{
     display:grid;
     grid-template-columns: 10rem 10rem;
