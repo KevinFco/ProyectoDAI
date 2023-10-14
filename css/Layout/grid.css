@@ -1,0 +1,45 @@
+.hero-section-container{
+    display: grid;
+    background: var(--clr-solid-bg);
+    height: 30vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;  
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.hero-section-container{
+    display: grid;
+    
+}
+
+.hero-btn-container{
+    display:grid;
+    grid-template-columns: 10rem 10rem;
+    column-gap: 71vw;
+}
+
+.btn-container{
+    display: flex;
+    width: 10rem;
+    height: 2rem;
+    gap: 1rem;
+}
+
+.hero-characteristics-left{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    left: 5rem;
+    top: 48rem;
+    color: var(--clr-white);
+}
+
+.hero-characteristics-rigth{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    right: 5rem;
+    top: 48rem;
+    color: var(--clr-white);
+}

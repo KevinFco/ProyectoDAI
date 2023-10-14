@@ -1,0 +1,18 @@
+
+.hero-container{
+    display: block;
+    background: url(../../imgs/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: min(160vh);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero-rombo{
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

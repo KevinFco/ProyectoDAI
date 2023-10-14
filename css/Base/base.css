@@ -1,0 +1,7 @@
+
+body{
+    display: grid;
+    background: url(../../imgs/fondo.png);
+    background-size: cover;
+    margin: 0;
+}

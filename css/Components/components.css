@@ -1,0 +1,17 @@
+.btn{
+    color: var(--clr-white);
+    background: var(--clr-red);
+    text-decoration: none;
+}
+
+.hero-btn{
+    padding: 0 .8rem;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-adjust{
+    padding: 0 1.4rem
+}
+
