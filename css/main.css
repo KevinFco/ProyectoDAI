@@ -3,7 +3,7 @@
 @import url(./Base/base.css);
 @import url(./Base/typography.css);
 
-
+@import url(./Layout/footer.css);
 @import url(./Layout/header.css);
 
 @import url(./Layout/grid.css);
