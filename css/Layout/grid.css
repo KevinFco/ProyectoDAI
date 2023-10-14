@@ -4,7 +4,7 @@
     height: min(26vh, 28vh, 30vh);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;  
-    margin: 0 auto;
+    margin: 0 auto 1rem;
 }
 
 .hero-btn-container{
