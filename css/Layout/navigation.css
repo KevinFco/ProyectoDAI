@@ -18,7 +18,10 @@
 @media (max-width: 768.98px){
 
     .top-nav{
-        display: none;
+        display: block;
+        background: url(../../imgs/logo.svg);
+        width: 6vw;
+        background-position: center;
     }
 
 }
