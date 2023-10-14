@@ -10,7 +10,7 @@
 .hero-btn-container{
     display:grid;
     grid-template-columns: 10rem 10rem;
-    column-gap: max(5vw, 55vw, 71vw);
+    column-gap: max(55vw, 61vw, 71vw);
     margin: 0 auto;
 }
 
