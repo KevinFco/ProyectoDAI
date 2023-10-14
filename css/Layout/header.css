@@ -2,9 +2,9 @@
 .hero-container{
     display: block;
     background: url(../../imgs/banner.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+    width: 100%;
     height: min(160vh);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;

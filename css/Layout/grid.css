@@ -5,7 +5,6 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;  
     margin: 0 auto;
-    padding: 0 3rem;
 }
 
 .hero-section-container{
@@ -17,6 +16,7 @@
     display:grid;
     grid-template-columns: 10rem 10rem;
     column-gap: 71vw;
+    margin: 0 2rem;
 }
 
 .btn-container{
