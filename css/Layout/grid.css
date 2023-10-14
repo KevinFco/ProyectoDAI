@@ -1,7 +1,7 @@
 .hero-section-container{
     display: grid;
     background: var(--clr-solid-bg);
-    height: 30vh;
+    height: min(20vh, 25vh, 30vh);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;  
     margin: 0 auto;
@@ -43,5 +43,13 @@
 
     .hero-btn-container{
         column-gap: 5vw;
+    }
+
+    .hero-characteristics-left{
+        display: none;
+    }
+
+    .hero-characteristics-rigth{
+        display: none;
     }
 }
