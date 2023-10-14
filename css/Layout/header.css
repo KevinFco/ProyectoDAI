@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: min(100vh, 120vh, 160vh);
+    height: min(145vh, 150vh, 160vh);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
