@@ -38,6 +38,46 @@
     color: var(--clr-white);
 }
 
+.carousel-container{
+    margin: 6.25rem 0 28rem;
+    display: grid;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    left: 50%; 
+    transform: translate(-50%, 8rem);
+    position: absolute;
+    width: 45%;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-img-right{
+    align-items:flex-end;
+    width: 35%;
+    height: auto;
+    border-radius: 30px;
+    margin-left:-15%;
+}
+
+.card-img-left{
+    align-items:flex-start;
+    width: 35%;
+    height: auto;
+    border-radius: 30px;
+    margin-right:-15%;
+}
+
+
+
+
 @media (max-width: 768.98px){
 
     .hero-btn-container{
