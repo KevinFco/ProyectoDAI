@@ -1,6 +1,6 @@
 .footer-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     background: var(--clr-solid-bg);
     color: var(--clr-white);
     border-top-right-radius: 30px;
@@ -11,13 +11,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 80vw;
+    gap: 2rem;
     margin: 1rem auto;
 }
 
 .footer-info{
     display: flex;
     gap: min(1rem, 2rem);
-    width: min(30vw, 33vw, 38vw);
 }
 
 .footer-links{

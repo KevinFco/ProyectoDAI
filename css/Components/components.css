@@ -15,3 +15,34 @@
     padding: 0 1.4rem
 }
 
+.card-img{
+    left: 50%; 
+    transform: translate(-50%, 8rem);
+    position: absolute;
+    width: 45%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.card-img-right{
+    align-items:flex-end;
+    width: 35%;
+    height: auto;
+    border-radius: 30px;
+    margin-left:-15%;
+    overflow: hidden;
+}
+
+.card-img-left{
+    align-items:flex-start;
+    width: 35%;
+    height: auto;
+    border-radius: 30px;
+    margin-right:-15%;
+}
+
+.meal-img{
+    display: block;
+    width: min(16vw, 23vw);
+}
+
