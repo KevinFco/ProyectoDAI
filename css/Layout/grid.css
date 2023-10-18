@@ -68,6 +68,11 @@
     gap: 1.5rem;
 }
 
+.meal-var{
+    background: var(--clr-meals-bg-var);
+    color: var(--clr-white);
+}
+
 .meal-text-container{
     display: grid;
     font-family: var(--ff-var1);
@@ -76,7 +81,26 @@
     width: 50vw;
 }
 
-@media (max-width: 768.98px){
+.subscribe-form-apps-container{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+
+}
+
+.subscribe-img-container{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.subscribe-img{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+@media (max-width: 832.98px){
 
     .meal-text-container{
         display: none;
