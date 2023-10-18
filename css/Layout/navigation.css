@@ -13,6 +13,8 @@
 
 .top-nav{
     margin: auto;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-md);
 }
 
 @media (max-width: 768.98px){

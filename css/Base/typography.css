@@ -1,0 +1,36 @@
+
+.meals-container-title{
+    font-family: var(--ff-var2);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bd);
+    text-align: center;
+    color: var(--clr-solid-bg);
+}
+.meal-title{
+    margin: auto 0;
+    font-family: var(--ff-var2);
+    font-weight: var(--fw-sbd);
+}
+
+.header-tile{
+    font-family: var(--ff-var2);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-sbd);
+}
+
+.header-text{
+    font-family: var(--ff-var2);
+    font-size: var(--fs-nm);
+    font-weight: var(--fw-bd);
+}
+
+.footer-link-title{
+    font-size: var(--fs-md);
+
+}
+
+.nav-footer-list{
+    padding: 0;
+    list-style-type: none;
+    font-size: var(--fs-sm);
+}

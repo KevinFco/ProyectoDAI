@@ -46,3 +46,9 @@
     width: min(16vw, 23vw);
 }
 
+.meal-btn{
+    margin: auto;
+    padding: .6rem .8rem;
+    font-weight: var(--fw-bd);
+}
+

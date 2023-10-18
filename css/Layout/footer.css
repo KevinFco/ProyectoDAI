@@ -1,5 +1,7 @@
 .footer-container{
-    display: flex;
+    display: grid;
+    font-family: var(--ff-var2);
+    font-weight: var(--fw-bd);
     width: 100%;
     background: var(--clr-solid-bg);
     color: var(--clr-white);
@@ -17,6 +19,8 @@
 
 .footer-info{
     display: flex;
+    font-size: var(--fs-sm);
+    align-items: center;
     gap: min(1rem, 2rem);
 }
 
@@ -25,11 +29,6 @@
     grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
     gap: 1rem;
     width: 30vw;
-}
-
-.nav-footer-list{
-    padding: 0;
-    list-style-type: none;
 }
 
 .nav-footer-link{
@@ -44,4 +43,9 @@
 
 .footer-img{
     width: 4rem;
+}
+
+.footer-legal{
+    text-align: center;
+    font-size: var(--fs-sm);
 }

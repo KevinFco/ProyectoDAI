@@ -8,6 +8,8 @@
 
 .hero-btn-container{
     display:grid;
+    font-size: var(--fs-esm);
+    font-weight: var(--fw-bd);
     grid-template-columns: 10rem 10rem;
     column-gap: min(55vw, 61vw, 71vw);
     margin: 0 auto;
@@ -61,17 +63,24 @@
     background: var(--clr-meals-bg);
     align-items: center;
     margin: auto 0;
-    padding: 0 max(5rem, 2rem,.5rem);
+    padding: 0 15vw;
     height: 35vh;
     gap: 1.5rem;
 }
 
 .meal-text-container{
     display: grid;
+    font-family: var(--ff-var1);
+    font-weight: var(--fw-md);
+    grid-template-rows: 2rem auto;
     width: 50vw;
 }
 
 @media (max-width: 768.98px){
+
+    .meal-text-container{
+        display: none;
+    }
 
     .hero-btn-container{
         column-gap: 5vw;

@@ -1,6 +1,7 @@
 
 .hero-container{
     display: block;
+    font-family: var(--ff-var1);
     background: url(../../imgs/banner.png);
     background-size: cover;
     background-position: center;
