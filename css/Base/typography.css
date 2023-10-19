@@ -9,6 +9,7 @@
 .meal-title{
     margin: auto 0;
     font-family: var(--ff-var2);
+    font-size: var(--fs-lg);
     font-weight: var(--fw-sbd);
 }
 
@@ -40,4 +41,18 @@
     font-size: var(--fs-md);
     font-weight: var(--fw-bd);
     color: var(--clr-solid-bg);
+}
+
+.subscribe-title{
+    font-family: var(--ff-var2);
+    font-size: clamp(var(--fs-md), 35rem, var(--fs-lg));
+    font-weight: var(--fw-bd);
+    margin: auto 0;
+}
+
+.subscribe-apps-title{
+    font-family: var(--ff-var2);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bd);
+    margin: auto 0;
 }
