@@ -61,15 +61,6 @@
     transition: filter .3s ease;
   }
   
-  @media screen and (max-width: 833.98px) {
-    .card-carousel {
-      margin-left:50%;
-      transform: translate(-50%, 0);
-      min-width: var(--carousel-extra-min-width);
-      
-    }
-  }
-  
   .card-carousel.smooth-return {
     transition: all .2s ease;
   }
@@ -120,7 +111,6 @@
     background-image: url("../../imgs/iconoComidasDestacadas1.svg")
   }
   
-  
   .image-container {
     width: 8em;
     height: 8em;
@@ -164,6 +154,10 @@
     gap: 1.5rem;
 }
 
+.meal-mobile{
+  display: none;
+}
+
 .meal-var{
     background: var(--clr-meals-bg-var);
     color: var(--clr-white);
@@ -196,10 +190,32 @@
     width: 100%;
 }
 
+@media screen and (max-width: 833.98px) {
+  .card-carousel {
+    margin-left:50%;
+    transform: translate(-50%, 0);
+    min-width: var(--carousel-extra-min-width);
+    
+  }
+}
+
 @media (max-width: 833.98px){
 
-    .meal-text-container{
+    .meal{
         display: none;
+    }
+
+    .meal-mobile{
+      display: grid;
+      background: var(--clr-meals-bg);
+      justify-content: center;
+      gap: .5rem;
+      margin: auto 0;
+      padding: 1rem 0;
+    }
+
+    .meal-var-mobile{
+      background: var(--clr-meals-bg-var);
     }
 
     .hero-btn-container{

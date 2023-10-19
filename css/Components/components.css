@@ -52,3 +52,9 @@
     font-weight: var(--fw-bd);
 }
 
+@media (max-width: 833.98px){
+    .meal-img{
+        width: 13rem;
+    }
+}
+
