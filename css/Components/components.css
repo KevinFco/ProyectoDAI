@@ -15,7 +15,7 @@
     padding: 0 1.4rem
 }
 
-.card-img{
+/*.card-center{
     left: 50%; 
     transform: translate(-50%, 8rem);
     position: absolute;
@@ -24,7 +24,7 @@
     border-radius: 30px;
 }
 
-.card-img-right{
+.card-right{
     align-items:flex-end;
     width: 35%;
     height: auto;
@@ -33,13 +33,13 @@
     overflow: hidden;
 }
 
-.card-img-left{
+.card-left{
     align-items:flex-start;
     width: 35%;
     height: auto;
     border-radius: 30px;
     margin-right:-15%;
-}
+}*/
 
 .meal-img{
     display: block;
