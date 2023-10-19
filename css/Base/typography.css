@@ -34,3 +34,10 @@
     list-style-type: none;
     font-size: var(--fs-sm);
 }
+
+.carousel-text{
+    font-family: var(--ff-var2);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bd);
+    color: var(--clr-solid-bg);
+}

@@ -30,4 +30,14 @@
     --clr-meals-bg: hsla(173, 24%, 80%, 75%);
     --clr-meals-bg-solid: hsla(173, 24%, 80%, 1);
     --clr-meals-bg-var: hsla(184, 100%, 15%, 75%);
+    --clr-carousel:0px 5px 5px 0px rgba(0,0,0,0.3);
+
+    /*Carousel vars*/
+
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    --carousel-extra-min-width: 360px;
+
 }

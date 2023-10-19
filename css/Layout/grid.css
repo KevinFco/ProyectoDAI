@@ -52,11 +52,6 @@
   }
   
   .card-carousel {
-    --card-width: 80%;
-    --card-max-width: 280px;
-    --card-height: 350px;
-    --carousel-min-width: 600px;
-    --carousel-extra-min-width: 360px;
     z-index: 1;
     position: relative;
     margin: 0 auto;
@@ -91,9 +86,9 @@
     margin: 0 auto;
     color: rgba(0,0,0,.5);
     transition: inherit;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: var(--clr-carousel);
+    -moz-box-shadow: var(--clr-carousel);
+    box-shadow: var(--clr-carousel);
     border-radius: 1em;
     filter: brightness(.9);
     display: flex;
@@ -134,9 +129,9 @@
     margin-bottom: 2em;
     border-radius: 100%;
     padding: 1em;
-    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset var(--clr-carousel);
+  -moz-box-shadow: inset var(--clr-carousel);
+  box-shadow: inset var(--clr-carousel);
     
   }
   
@@ -151,13 +146,6 @@
     top: calc(-10% - 3px);
     left: calc(-10% - 3px);
   }
-
-.carousel-text{
-    font-family: var(--ff-var2);
-    font-size: var(--fs-md);
-    font-weight: var(--fw-bd);
-    color: var(--clr-solid-bg);
-}
 
 .meals-container{
     display: grid;
