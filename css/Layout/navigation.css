@@ -52,7 +52,7 @@
     .logo-mobile{
         display: flex;
         align-items: center;
-        margin: 0 50% 1rem;
+        margin: 1rem 50%;
         transform: translate(-60%, 0);
         width: 6rem;
     }
