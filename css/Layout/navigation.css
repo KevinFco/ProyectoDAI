@@ -31,7 +31,7 @@
         display: grid;
         position: fixed;
         margin: 0;
-        top: -35rem;
+        top: -37rem;
         right: 0;
         gap: 2rem;
         background: var(--clr-meals-bg-var);
