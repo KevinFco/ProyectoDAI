@@ -159,6 +159,58 @@
   margin-left: 3rem;
 }
 
+.meal-names-container{
+  text-align: center;
+  font-family: var(--ff-var2)
+}
+
+.meal-info-container{
+  display: grid;
+  background: var(--clr-solid-bg);
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.info-container{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(212px, 1fr));
+  width: 70vw;
+}
+
+.characteristics-container{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  margin: auto;
+  font-weight: var(--fw-rg);
+  font-size: clamp(var(--fs-md), 30px, var(--fs-lg));
+  color: var(--clr-solid-bg);
+  width: 80vw;
+}
+
+.order-size-container{
+  display: grid;
+  align-items: flex-start;
+}
+
+.rigth-container{
+  display: grid;
+  gap: 2rem;
+}
+
+.order-buy-container{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(220px, 1fr));
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
 @media screen and (max-width: 833.98px) {
   .card-carousel {
     margin-left:50%;

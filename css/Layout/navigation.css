@@ -1,8 +1,19 @@
 .nav-list{
     display: flex;
     gap: 3rem;
+    padding: 0;
     list-style: none;
     text-align: center;
+    align-items: center;
+}
+
+.meal-char-nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(136px,1fr));
+    width: 30vw;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
     align-items: center;
 }
 

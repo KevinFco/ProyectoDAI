@@ -88,3 +88,17 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
+
+.meal-meal-title-container{
+    display: grid;
+    background: url(../../imgs/ComidaBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-weight: var(--fw-rg);
+    font-size: clamp(var(--fs-md), 30px, var(--fs-lg));
+    color: var(--clr-white);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    width: 100%;
+}

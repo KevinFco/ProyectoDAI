@@ -98,6 +98,46 @@
   background-color: transparent;
 }
 
+.btn-meal-like{
+  display: block;
+  position: absolute;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: none;
+  right: 3rem;
+  top: 2rem;
+}
+
+.meal-img-category{
+  display: block;
+  margin: auto;
+  width: 15rem;
+}
+
+.characteristics-btn{
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-family: var(--ff-var1);
+  font-size: var(--fs-nm);
+  color: var(--clr-solid-bg);
+  background: var(--clr-meals-bg-solid);
+}
+
+.buy-btn{
+  display: block;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-family: var(--ff-var1);
+  font-size: clamp(var(--fs-md), 2rem, var(--fs-lg));
+  font-weight: var(--fw-bd);
+  background: var(--clr-red);
+  border: none;
+  color: var(--clr-white);
+  text-align: center;
+}
+
 @media (max-width: 833.98px){
     .meal-img{
         width: 13rem;
