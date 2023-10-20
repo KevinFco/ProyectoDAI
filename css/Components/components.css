@@ -15,31 +15,55 @@
     padding: 0 1.4rem
 }
 
-/*.card-center{
-    left: 50%; 
-    transform: translate(-50%, 8rem);
+.card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background:var(--clr-meals-bg-solid);
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
     position: absolute;
-    width: 45%;
-    height: auto;
-    border-radius: 30px;
-}
-
-.card-right{
-    align-items:flex-end;
-    width: 35%;
-    height: auto;
-    border-radius: 30px;
-    margin-left:-15%;
-    overflow: hidden;
-}
-
-.card-left{
-    align-items:flex-start;
-    width: 35%;
-    height: auto;
-    border-radius: 30px;
-    margin-right:-15%;
-}*/
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: var(--clr-carousel);
+    -moz-box-shadow: var(--clr-carousel);
+    box-shadow: var(--clr-carousel);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(1) .image-container {
+      background-image: url("../../imgs/iconoComidas1.svg");
+  }
+   
+  .card:nth-of-type(2) .image-container {
+    background-image: url("../../imgs/iconoEntradas1.svg")
+  }
+  
+  .card:nth-of-type(3) .image-container {
+    background-image: url("../../imgs/iconoBebidas1.svg")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("../../imgs/iconoPostres1.svg")
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("../../imgs/iconoComidasDestacadas1.svg")
+  }
 
 .meal-img{
     display: block;

@@ -6,6 +6,11 @@
     text-align: center;
     color: var(--clr-solid-bg);
 }
+
+.hero-category-container{
+    font-family: var(--ff-var1);
+}
+
 .meal-title{
     margin: auto 0;
     font-family: var(--ff-var2);
