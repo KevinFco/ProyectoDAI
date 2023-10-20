@@ -1,5 +1,6 @@
 .footer-container{
     display: grid;
+    position: relative;
     font-family: var(--ff-var2);
     font-weight: var(--fw-bd);
     width: 100%;

@@ -55,3 +55,36 @@
     display: block;
     width: 6rem;
 }
+
+.category-meals{
+    display: grid;
+    position: relative;
+    background: url(../../imgs/comidaejemplo2.png);
+    margin: auto;
+    padding: 8rem 0 1rem 0;
+    background-repeat: no-repeat;
+    font-family: var(--ff-var1);
+    font-weight: var(--fw-md);
+    text-align: center;
+    width: 17rem;
+}
+
+.price-category-container{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    gap: 8rem;
+    width: 16.9rem;
+    font-size: var(--fs-sm);
+    background: var(--clr-red);
+    color: var(--clr-white);
+}
+
+.category-food-section-container{
+    display: grid;
+    width: 95vw;
+    margin: 3rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}

@@ -84,3 +84,20 @@
     font-weight: var(--fw-bd);
     margin: auto 0;
 }
+
+.food-title{
+    margin: 1rem 0 0;
+    color: var(--clr-solid-bg);
+    font-family: var(--ff-var2);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bd);
+}
+
+.category-meal-title{
+    margin: 0;
+}
+
+.meal-info{
+    margin: .3rem 0;
+    color: var(--clr-solid-bg);
+}

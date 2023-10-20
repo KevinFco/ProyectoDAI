@@ -80,12 +80,22 @@
     display: block;
     position: absolute;
     right: 4rem;
+    top: -2rem;
     background: url(../../imgs/go-up.svg);
     background-size: contain;
     background-repeat: no-repeat;
     border: 0;
     width: 6rem;
     height: 6rem;
+}
+
+.like-btn{
+  display: block;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 @media (max-width: 833.98px){
