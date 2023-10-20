@@ -68,5 +68,9 @@
     .meal-img{
         width: 13rem;
     }
+
+    .btn-up{
+        display: none;
+    }
 }
 
