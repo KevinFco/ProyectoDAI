@@ -16,3 +16,41 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+.header-container{
+    background: url(../../imgs/bannerCategories.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    height: min(50rem, 65rem, 75rem);
+    display: grid;
+    text-align: center;
+    grid-template-rows: 3rem auto;
+}
+
+.header-featured-container{
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header-category-container{
+    display: block; 
+    width: 25vw;
+}
+
+.header-category-container-mobile{
+    display: none;
+}
+
+@media (max-width: 833.98px){
+    .header-category-container-mobile{
+        display: grid; 
+        width: 80vw;
+        justify-content: center;
+    }
+    .header-category-container{
+        display: none; 
+    }
+}

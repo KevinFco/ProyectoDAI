@@ -70,7 +70,6 @@
     background-size: cover;
     margin-bottom: 2em;
     border-radius: 100%;
-    padding: 1em;
     -webkit-box-shadow: inset var(--clr-carousel);
   -moz-box-shadow: inset var(--clr-carousel);
   box-shadow: inset var(--clr-carousel);

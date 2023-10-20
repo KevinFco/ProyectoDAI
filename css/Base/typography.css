@@ -24,10 +24,33 @@
     font-weight: var(--fw-sbd);
 }
 
+.header-title-categories{
+    font-family: var(--ff-var2);
+    font-size: clamp(var(--fs-md), 0.0923rem + 4.3077vw, var(--fs-lg));
+    font-weight: var(--fw-bd);
+    color: var(--clr-white);
+    margin: 5rem 0 0 0;
+    height: fit-content;
+}
+
 .header-text{
     font-family: var(--ff-var2);
     font-size: var(--fs-nm);
     font-weight: var(--fw-bd);
+}
+
+.title-header-category{
+    font-family: var(--ff-var2);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bd);
+    color: var(--clr-white);
+}
+
+.text-header-category{
+    font-family: var(--ff-var1);
+    font-size: var(--fs-nm);
+    font-weight: var(--fw-md);
+    color: var(--clr-white);
 }
 
 .footer-link-title{
