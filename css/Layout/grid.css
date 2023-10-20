@@ -24,6 +24,7 @@
 
 .hero-characteristics-left{
     position: absolute;
+    text-align: center;
     width: 15rem;
     height: 10rem;
     left: 5rem;
@@ -33,6 +34,7 @@
 
 .hero-characteristics-rigth{
     position: absolute;
+    text-align: center;
     width: 15rem;
     height: 10rem;
     right: 5rem;
@@ -237,10 +239,6 @@
 
     .hero-btn-container{
         column-gap: 5vw;
-    }
-
-    .hero-characteristics-left{
-        display: none;
     }
 
     .hero-characteristics-rigth{
