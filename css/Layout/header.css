@@ -22,17 +22,19 @@
     background-size: cover;
     background-position: center;
     justify-content: center;
-    height: min(50rem, 65rem, 75rem);
+    height: min(60rem, 65rem, 75rem);
     display: grid;
     text-align: center;
     grid-template-rows: 3rem auto;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
 }
 
 .header-featured-container{
     display: flex;
     margin: auto 0;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 5vw;
 }
 
 .header-category-container{
