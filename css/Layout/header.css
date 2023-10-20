@@ -12,7 +12,7 @@
 
 .hero-rombo{
     position: absolute;
-    top: 35vh;
+    top: 16rem;
     left: 50%;
     transform: translate(-50%, 0);
 }
