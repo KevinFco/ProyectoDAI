@@ -52,9 +52,25 @@
     font-weight: var(--fw-bd);
 }
 
+.btn-up{
+    display: block;
+    position: absolute;
+    right: 4rem;
+    background: url(../../imgs/go-up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0;
+    width: 6rem;
+    height: 6rem;
+}
+
 @media (max-width: 833.98px){
     .meal-img{
         width: 13rem;
+    }
+
+    .btn-up{
+        display: none;
     }
 }
 

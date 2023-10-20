@@ -24,6 +24,7 @@
 
 .hero-characteristics-left{
     position: absolute;
+    text-align: center;
     width: 15rem;
     height: 10rem;
     left: 5rem;
@@ -33,6 +34,7 @@
 
 .hero-characteristics-rigth{
     position: absolute;
+    text-align: center;
     width: 15rem;
     height: 10rem;
     right: 5rem;
@@ -186,7 +188,7 @@
     margin-bottom: 6rem;
     column-gap: 5rem;
     width: 100%;
-    height: 85vh;
+    height: 40rem;
 }
 
 .subscribe-text-container{
@@ -205,6 +207,7 @@
   height: fit-content;
   justify-content: center;
   margin-top: min(5vw, 8rem, 10rem);
+  margin-left: 3rem;
 }
 
 @media screen and (max-width: 833.98px) {
@@ -237,10 +240,6 @@
 
     .hero-btn-container{
         column-gap: 5vw;
-    }
-
-    .hero-characteristics-left{
-        display: none;
     }
 
     .hero-characteristics-rigth{

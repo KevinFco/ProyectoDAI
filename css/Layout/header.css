@@ -1,19 +1,18 @@
 
 .hero-container{
-    display: block;
     font-family: var(--ff-var1);
     background: url(../../imgs/banner.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: min(145vh, 150vh, 160vh);
+    height: min(65rem, 75rem, 85rem);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
 .hero-rombo{
     position: absolute;
-    top: 35vh;
+    top: 16rem;
     left: 50%;
     transform: translate(-50%, 0);
 }
