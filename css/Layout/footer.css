@@ -27,6 +27,7 @@
 
 .footer-links{
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
     gap: 1rem;
     width: 30vw;
