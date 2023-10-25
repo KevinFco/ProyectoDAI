@@ -27,8 +27,8 @@
             </label>
             <!--mobile nav btn-->
             <ul class="nav-list">
-                <li><a class="nav-list-link" href="./index.html">Home</a></li>
-                <li><a class="nav-list-link" href="./categories.html">Categories</a></li>
+                <li><a class="nav-list-link" href="./index.php">Home</a></li>
+                <li><a class="nav-list-link" href="./categories.php">Categories</a></li>
                 <li><a class="nav-list-link" href="#">Gallery</a></li>
                 <li><img class="nav-list-img" src="./imgs/logo.svg" alt="Logo"></li>
                 <li><a class="nav-list-link" href="#">Locations</a></li>
