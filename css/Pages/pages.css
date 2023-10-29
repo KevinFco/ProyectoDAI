@@ -59,9 +59,10 @@
 .category-meals{
     display: grid;
     position: relative;
-    background: url(../../imgs/comidaejemplo2.png);
+    background: var(--clr-meals-bg-solid);
     margin: auto;
-    padding: 8rem 0 1rem 0;
+    border-radius: 1rem;
+    padding: 0rem 0 1rem;
     background-repeat: no-repeat;
     font-family: var(--ff-var1);
     font-weight: var(--fw-md);
@@ -101,4 +102,9 @@
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
     width: 100%;
+}
+
+.meal-card-img{
+    display: block;
+    width: 16.9rem;
 }

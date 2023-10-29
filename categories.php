@@ -1,3 +1,10 @@
+<?php
+
+    require_once("./php/database.php");
+
+    $items = $database -> select("tb_dishes","*");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,477 +104,46 @@
         <div class="category-meals-container">
 
             <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
+            <?php
+            for($i = 0; $i <4 ; $i++){
+              echo  "<section class='category-meals'>"
+                    ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
+                    ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
+                    ."<div class='price-category-container'>"
+                        ."<h4 class='category-meal-title'>Main dish</h4>"
+                        ."<div>"
+                            ."<img src='./imgs/like1.svg' alt='like-btn'>"
+                            ."<span>1000人</span>"
+                        ."</div>" 
+                    ."</div>"
+                    ."<h3 class='food-title'>Sashimi</h3>"
+                    ."<p class='meal-info'>Fresh Raw Salmon</p>"
+                    ."<a class='btn meal-btn' href='./meal.html'>Read More</a>"
+                ."</section>";
+            }
+            ?> 
             </div>
-
             <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
+            <?php
+            for($i = 0; $i <4 ; $i++){
+              echo  "<section class='category-meals'>"
+                    ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
+                    ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
+                    ."<div class='price-category-container'>"
+                        ."<h4 class='category-meal-title'>Main dish</h4>"
+                        ."<div>"
+                            ."<img src='./imgs/like1.svg' alt='like-btn'>"
+                            ."<span>1000人</span>"
+                        ."</div>" 
+                    ."</div>"
+                    ."<h3 class='food-title'>Sashimi</h3>"
+                    ."<p class='meal-info'>Fresh Raw Salmon</p>"
+                    ."<a class='btn meal-btn' href='./meal.html'>Read More</a>"
+                ."</section>";
+            }
+            ?> 
             </div>
 
-            <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-            </div>
-
-            <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-            </div>
-
-            <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-            </div>
-
-            <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-            </div>
-
-            <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-            </div>
-
-            <div class="category-food-section-container">
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-
-                <section class="category-meals">
-                    <button class="like-btn"><img src="./imgs/like.svg" alt="like-btn"></button>
-                    <div class="price-category-container">
-                        <h4 class="category-meal-title">Main dish</h4>
-                        <div>
-                            <img src="./imgs/like1.svg" alt="like-btn">
-                            <span>1000人</span>
-                        </div> 
-                    </div>
-                    <h3 class="food-title">Sashimi</h3>
-                    <p class="meal-info">Fresh Raw Salmon</p>
-                    <a class="btn meal-btn" href="./meal.html">Read More</a>
-                </section>
-            </div>
-        </div>
         <!--Footer-->
         <footer class="footer-container">
             <div class="footer-content">
