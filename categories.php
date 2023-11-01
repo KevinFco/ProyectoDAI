@@ -14,9 +14,43 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <?php
-        include "./parts/categories-header.php";
-    ?>
+    <header class="hero-category-container">
+            <div class="hero-section-container">
+                <?php
+                    include "./parts/navigator.php";
+                ?>
+            <div class="header-container">
+                <h1 class="header-title-categories">Discover Culinary Excellence</h1>
+                <div class="header-featured-container">
+                    <!--header meal mobile-->
+                    <div class="header-category-container-mobile">
+                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
+                        <p class="title-header-category">Oyakodon</p>
+                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
+                        <a class="btn meal-btn" href="./meal.html">Read More</a>
+                    </div>
+                    <!--header meal mobile-->
+                    <div class="header-category-container">
+                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
+                        <p class="title-header-category">Oyakodon</p>
+                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
+                        <a class="btn meal-btn" href="./meal.html">Read More</a>
+                    </div>
+                    <div class="header-category-container">
+                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
+                        <p class="title-header-category">Oyakodon</p>
+                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
+                        <a class="btn meal-btn" href="./meal.html">Read More</a>
+                    </div>
+                    <div class="header-category-container">
+                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
+                        <p class="title-header-category">Oyakodon</p>
+                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
+                        <a class="btn meal-btn" href="./meal.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
     <main>
         
         <!--Barra exploradora-->

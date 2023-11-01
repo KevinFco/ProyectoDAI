@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <?php
-        include "./parts/meal-header.php";
-    ?>
+    <header class="hero-category-container">
+        <div class="hero-section-container">
+            <?php
+                include "./parts/navigator.php";
+            ?>
+        </div>
+    </header>
     <main>
 
         <div class="meal-meal-title-container">

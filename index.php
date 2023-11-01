@@ -7,9 +7,25 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <?php
-        include "./parts/home-header.php";
-    ?>
+<header class="hero-container">
+        <div class="hero-section-container">
+            <?php
+                include "./parts/navigator.php";
+            ?>
+            <!--logo mobile-->
+            <div class="hero-rombo">
+                <img src="./imgs/romboWashoku.svg" alt="">
+            </div>
+            <div class="hero-characteristics-left">
+                <h1 class="header-title">Taste Washoku</h1>
+                <p class="header-text">Experience culinary artistry, savor tradition, embrace flavor. Welcome to a world where each dish tells a captivating story.</p>
+            </div>
+            <div class="hero-characteristics-rigth">
+                <h1 class="header-title">Enjoy Tradition</h1>
+                <p class="header-text">Immerse in the soul of Japan's culinary heritage, where flavors of tradition unfold with each unforgettable bite.</p>
+            </div>
+        </div>
+    </header>
     <main>
         <!--carrousel-->
         <div class="carousel-container">
