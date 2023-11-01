@@ -7,56 +7,10 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="hero-container">
-        <div class="hero-section-container">
-            <div class="hero-btn-container">
-                <div class="btn-container">
-                    <a class="btn hero-btn" href="#">log in</a>
-                    <a class="btn hero-btn" href="#">sign up</a>
-                </div>
-                <div class="btn-container">
-                    <a class="btn hero-btn btn-adjust" href="#">EN</a>
-                    <a class="btn hero-btn" href="#">日本語</a>
-                </div>
-            </div>
-            <nav class="top-nav">
-                <!--mobile nav btn-->
-                <input class="mobile-cb" type="checkbox">
-                <label class="mobile-btn">
-                    <span></span>
-                </label>
-                <!--mobile nav btn-->
-                <ul class="nav-list">
-                    <li><a class="nav-list-link" href="./index.php">Home</a></li>
-                    <li><a class="nav-list-link" href="./categories.php">Categories</a></li>
-                    <li><a class="nav-list-link" href="#">Gallery</a></li>
-                    <li><img class="nav-list-img" src="./imgs/logo.svg" alt="Logo"></li>
-                    <li><a class="nav-list-link" href="#">Locations</a></li>
-                    <li><a class="nav-list-link" href="#">About</a></li>
-                    <li><a class="nav-list-link" href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <!--logo mobile-->
-            <div class="logo-mobile">
-                <img src="./imgs/logo.svg" alt="logo">
-            </div>
-            <!--logo mobile-->
-            <div class="hero-rombo">
-                <img src="./imgs/romboWashoku.svg" alt="">
-            </div>
-            <div class="hero-characteristics-left">
-                <h1 class="header-title">Taste Washoku</h1>
-                <p class="header-text">Experience culinary artistry, savor tradition, embrace flavor. Welcome to a world where each dish tells a captivating story.</p>
-            </div>
-            <div class="hero-characteristics-rigth">
-                <h1 class="header-title">Enjoy Tradition</h1>
-                <p class="header-text">Immerse in the soul of Japan's culinary heritage, where flavors of tradition unfold with each unforgettable bite.</p>
-            </div>
-        </div>
-    </header>
-
+    <?php
+        include "./parts/home-header.php";
+    ?>
     <main>
-
         <!--carrousel-->
         <div class="carousel-container">
             <div class="card-carousel">
@@ -162,42 +116,9 @@
         </div>  
         <!--subscribe-->
 
-        <!--Footer-->
-        <footer class="footer-container">
-            <div class="footer-content">
-                <section class="footer-info">
-                    <div class="footer-img-container">
-                        <img class="footer-img" src="./imgs/logo.svg" alt="logo">
-                    </div>
-                    <p>
-                        At Washoku, we invite you on an enchanting culinary journey through the heart of Japan. Our name, "Washoku," reflects our commitment to the art of traditional Japanese cuisine, which has been celebrated for its balance of flavors, artful presentation, and deep cultural significance.
-                    </p>
-                </section>
-                <div class="footer-links">
-                    <section>
-                        <h3>Get to Know Us</h3>
-                        <ul class="nav-footer-list">
-                            <li><a class="nav-footer-link" href="#">About Us</a></li>
-                            <li><a class="nav-footer-link" href="#">Rules & Reservation Policies</a></li>
-                            <li><a class="nav-footer-link" href="#">Accessibility Media Center</a></li>
-                            <li><a class="nav-footer-link" href="#">Locations</a></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3 class="footer-link-title">Let Us Help You</h3>
-                        <ul class="nav-footer-list">
-                            <li><a class="nav-footer-link" href="#">Your Account</a></li>
-                            <li><a class="nav-footer-link" href="#">Your Reservations</a></li>
-                            <li><a class="nav-footer-link" href="#">Contact Us</a></li>
-                            <li><a class="nav-footer-link" href="#">Help Center</a></li>
-                            <li><a class="nav-footer-link" href="#">Submit Feedback</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-            <button class="btn-up"></button>
-            <p class="footer-legal">&copy; 2023. All rights reserved.</p>
-        </footer>
+        <?php
+            include "./parts/footer.php";
+        ?>
     </main>
     
     <script src="./Js/main.js"></script>
