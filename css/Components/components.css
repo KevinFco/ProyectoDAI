@@ -116,6 +116,16 @@
     margin: auto;
     padding: .6rem .8rem;
     font-weight: var(--fw-bd);
+    border: var(--clr-red) 4px solid;
+}
+
+.meal-btn:hover{
+  margin: auto;
+  padding: .6rem .8rem;
+  font-weight: var(--fw-bd);
+  background: transparent;
+  border: var(--clr-red) 4px solid;
+  color: var(--clr-red);
 }
 
 .btn-up{

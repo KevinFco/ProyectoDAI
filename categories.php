@@ -58,10 +58,10 @@
             <div class="size-comidas">
                 <h2 class="meals-container-title">Explore our menu</h2>
                 <ul class="nav-size-list porciones-lista">
-                    <li><button class="size-porcion">All</button></li>
-                    <li><button class="size-porcion">Personal</button></li>
-                    <li><button class="size-porcion">Couple</button></li>
-                    <li><button class="size-porcion">Family</button></li>
+                    <li><button id="size1" class="size-porcion">All</button></li>
+                    <li><button id="size2" class="size-porcion">Personal</button></li>
+                    <li><button id="size3" class="size-porcion">Couple</button></li>
+                    <li><button id="size4" class="size-porcion">Family</button></li>
                 </ul>
             </div>
             <div class="categories-container">
@@ -73,11 +73,13 @@
         </div>
         <!--Barra exploradora-->
         <div class="category-meals-container">
-
-            <div class="category-food-section-container">
-            <?php
-            for($i = 0; $i <4 ; $i++){
-              echo  "<section class='category-meals'>"
+        <?php
+            
+            for($i = 0; $i < sizeof($items)/4; $i++){
+                
+              echo  "<div class='category-food-section-container'>";
+              for($j = 0; $j < sizeof($items[0])/2; $j++){
+                echo "<section class='category-meals'>"
                     ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
                     ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
                     ."<div class='price-category-container'>"
@@ -87,38 +89,23 @@
                             ."<span>1000人</span>"
                         ."</div>" 
                     ."</div>"
-                    ."<h3 class='food-title'>Sashimi</h3>"
+                    ."<h3 class='food-title'>".$items[$j]["dish_name"]."</h3>"
                     ."<p class='meal-info'>Fresh Raw Salmon</p>"
-                    ."<a class='btn meal-btn' href='./meal.php'>Read More</a>"
+                    ."<a class='btn meal-btn' href='./meal.php?id=".$items[$j]["id_dish"]."'>Read More</a>"
                 ."</section>";
+              }
+              echo  "</div>";
             }
             ?> 
-            </div>
-            <div class="category-food-section-container">
-            <?php
-            for($i = 0; $i <4 ; $i++){
-              echo  "<section class='category-meals'>"
-                    ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
-                    ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
-                    ."<div class='price-category-container'>"
-                        ."<h4 class='category-meal-title'>Main dish</h4>"
-                        ."<div>"
-                            ."<img src='./imgs/like1.svg' alt='like-btn'>"
-                            ."<span>1000人</span>"
-                        ."</div>" 
-                    ."</div>"
-                    ."<h3 class='food-title'>Sashimi</h3>"
-                    ."<p class='meal-info'>Fresh Raw Salmon</p>"
-                    ."<a class='btn meal-btn' href='./meal.php'>Read More</a>"
-                ."</section>";
-            }
-            ?> 
-            </div>
-
         <!--Footer-->
         <?php
             include "./parts/footer.php";
         ?>
     </main>
+    <script>
+        function updatePorcionSize(){
+            if(document.getElementById("size1").)
+        }
+    </script>
 </body>
 </html>

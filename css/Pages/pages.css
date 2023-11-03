@@ -22,7 +22,7 @@
     background-color: transparent;
     color: var(--clr-solid-bg);
     padding: .5rem 1rem;
-    border: none;
+    border: transparent .2rem solid;
 }
 
 .size-porcion:active{
