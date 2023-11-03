@@ -89,7 +89,7 @@
                     ."</div>"
                     ."<h3 class='food-title'>Sashimi</h3>"
                     ."<p class='meal-info'>Fresh Raw Salmon</p>"
-                    ."<a class='btn meal-btn' href='./meal.html'>Read More</a>"
+                    ."<a class='btn meal-btn' href='./meal.php'>Read More</a>"
                 ."</section>";
             }
             ?> 
@@ -109,7 +109,7 @@
                     ."</div>"
                     ."<h3 class='food-title'>Sashimi</h3>"
                     ."<p class='meal-info'>Fresh Raw Salmon</p>"
-                    ."<a class='btn meal-btn' href='./meal.html'>Read More</a>"
+                    ."<a class='btn meal-btn' href='./meal.php'>Read More</a>"
                 ."</section>";
             }
             ?> 

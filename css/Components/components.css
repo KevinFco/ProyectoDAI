@@ -1,3 +1,45 @@
+.login-exit-btn{
+  position: relative;
+  background: transparent;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+}
+
+.exit-btn{
+  position: absolute;
+  top: .7rem;
+  right:1rem;
+  width: 3rem;
+  height: 3rem;
+  rotate: 45deg;
+  z-index: 3;
+}
+
+.exit-btn > span,
+.exit-btn > span::before{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: .5rem;
+  background: var(--clr-red);
+  transition-duration: .25s;
+}
+
+.exit-btn > span::before{
+  content: '';
+  rotate: 90deg;
+  top: 0rem;
+}
+
+.login-btn{
+  margin: auto;
+  width: 20%;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+}
+
 .btn{
     color: var(--clr-white);
     background: var(--clr-red);

@@ -36,13 +36,13 @@
     display: grid;
     width: 80vw;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
     gap: 1rem;
 }
 
 .btn-category{
     display: flex;
-    width: 14rem;
+    width: min(14rem, 10rem);
     height: 8rem;
     margin: 0 auto;
     border: none;
@@ -53,7 +53,7 @@
 
 .categorie-img{
     display: block;
-    width: 6rem;
+    width: min(6rem, 4rem);
 }
 
 .category-meals{
@@ -67,7 +67,7 @@
     font-family: var(--ff-var1);
     font-weight: var(--fw-md);
     text-align: center;
-    width: 17rem;
+    width: min(17rem, 15rem);
 }
 
 .price-category-container{
@@ -75,8 +75,8 @@
     align-items: center;
     height: fit-content;
     justify-content: center;
-    gap: 8rem;
-    width: 16.9rem;
+    gap: min(40%, 8rem);
+    width: min(17rem, 15rem);
     font-size: var(--fs-sm);
     background: var(--clr-red);
     color: var(--clr-white);
@@ -106,5 +106,5 @@
 
 .meal-card-img{
     display: block;
-    width: 16.9rem;
+    width: min(17rem, 15rem);
 }

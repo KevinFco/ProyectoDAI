@@ -1,3 +1,36 @@
+.login-form{
+  display: none;
+  position: fixed;
+  top: 15vh;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%,0);
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-family: var(--ff-var2);
+  font-size: var(--fs-nm);
+  font-weight: var(--fw-rg);
+  color: var(--clr-white);
+  background: var(--clr-meals-bg-var);
+}
+
+.title-exit-container{
+  display: grid;
+  position: relative;
+  align-items: center;
+  grid-template-columns: 4rem 3rem;
+  gap: 50%;
+}
+
+.form-items{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: .5rem 0;
+  align-items: center;
+}
+
 .hero-section-container{
     display: grid;
     background: var(--clr-solid-bg);

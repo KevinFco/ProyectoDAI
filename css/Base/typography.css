@@ -1,3 +1,7 @@
+.login-title {
+    font-family: var(--ff-var1);
+    font-weight: var(--fw-bd);
+}
 
 .meals-container-title{
     font-family: var(--ff-var2);
