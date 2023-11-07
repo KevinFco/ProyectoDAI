@@ -73,30 +73,27 @@
         </div>
         <!--Barra exploradora-->
         <div class="category-meals-container">
-        <?php
-            
-            for($i = 0; $i < sizeof($items)/4; $i++){
+            <div class='category-food-section-container'>
+            <?php
                 
-              echo  "<div class='category-food-section-container'>";
-              for($j = 0; $j < sizeof($items[0])/2; $j++){
-                echo "<section class='category-meals'>"
-                    ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
-                    ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
-                    ."<div class='price-category-container'>"
-                        ."<h4 class='category-meal-title'>Main dish</h4>"
-                        ."<div>"
-                            ."<img src='./imgs/like1.svg' alt='like-btn'>"
-                            ."<span>1000人</span>"
-                        ."</div>" 
-                    ."</div>"
-                    ."<h3 class='food-title'>".$items[$j]["dish_name"]."</h3>"
-                    ."<p class='meal-info'>Fresh Raw Salmon</p>"
-                    ."<a class='btn meal-btn' href='./meal.php?id=".$items[$j]["id_dish"]."'>Read More</a>"
-                ."</section>";
-              }
-              echo  "</div>";
-            }
+                foreach($items as $food){
+                    echo "<section class='category-meals'>"
+                        ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
+                        ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
+                        ."<div class='price-category-container'>"
+                            ."<h4 class='category-meal-title'>Main dish</h4>"
+                            ."<div>"
+                                ."<img src='./imgs/like1.svg' alt='like-btn'>"
+                                ."<span>1000人</span>"
+                            ."</div>" 
+                        ."</div>"
+                        ."<h3 class='food-title'>".$food["dish_name"]."</h3>"
+                        ."<p class='meal-info'>Fresh Raw Salmon</p>"
+                        ."<a class='btn meal-btn' href='./meal.php?id=".$food["id_dish"]."'>Read More</a>"
+                    ."</section>";
+                }
             ?> 
+            </div>
         <!--Footer-->
         <?php
             include "./parts/footer.php";

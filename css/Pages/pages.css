@@ -1,7 +1,7 @@
 
 .nav-size-list{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
     text-align: center;
     align-items: center;
@@ -86,7 +86,7 @@
     display: grid;
     width: 95vw;
     margin: 3rem auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
     gap: 1.5rem;
 }
 
