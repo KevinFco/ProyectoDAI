@@ -59,42 +59,50 @@
             ."</div>"
         ."</div>"
 
-        ."<div class='characteristics-container'>"
-            ."<div class='left-container'>"
-                ."<section class='order-size-container'>"
-                    ."<h3>Order Size</h3>"
-                    ."<ul class='meal-char-nav'>"
-                        ."<li><button class='characteristics-btn'>Personal</button></li>"
-                        ."<li><button class='characteristics-btn'>Family</button></li>"
-                    ."</ul>"
-                ."</section>"
-
-                ."<section class='order-size-container'>"
-                    ."<h3>Delivery</h3>"
-                    ."<ul class='meal-char-nav'>"
-                        ."<li><button class='characteristics-btn'>Salon</button></li>"
-                        ."<li><button class='characteristics-btn'>Express</button></li>"
-                        ."<li><button class='characteristics-btn'>To go</button></li>"
-                    ."</ul>"
-                ."</section>"
-            ."</div>"
-
-            ."<div class='rigth-container'>"
-                ."<h2 class='price-title'>".$dish[0]["category_name"]."</h2>";
-                if($dish[0]["featured_dish"]==1){
-                    echo "<h2 class='price-title feature-title'>Featured Meal</h2>";
-                }else{
-                    echo "<h2 class='price-title no-feature-title'>Featured Meal</h2>";
-                } 
-            echo "</div>"
-        ."</div>"
-        
-        ."<div class='order-buy-container'>"
-            ."<h2 class='price-title'>".$dish[0]["price"]."円</h2>"
-            ."<button class='buy-btn'>Add to Cart</button>"
-        ."</div>";
-
         ?>
+    <form action="cart.php" method="post" enctype="multipart/form-data">
+        <div class='characteristics-container'>
+            <div class='left-container'>
+                <section class='order-size-container'>
+                    <h3>Order Size</h3>
+                    <ul class='meal-char-nav'>
+                        <li><input type="button" class='characteristics-btn' value="Personal"></li>
+                        <li><input type="button" class='characteristics-btn' value="Family"></li>
+                    </ul>
+                </section>
+
+                <section class='order-size-container'>
+                    <h3>Delivery</h3>
+                    <ul class='meal-char-nav'>
+                        <li><input type="button" class='characteristics-btn' value="Salon"></li>
+                        <li><input type="button" class='characteristics-btn' value="Express"></li>
+                        <li><input type="button" class='characteristics-btn' value="To go"></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class='rigth-container'>
+                <?php
+                echo "<h2 class='price-title'>".$dish[0]["category_name"]."</h2>";
+                    if($dish[0]["featured_dish"]==1){
+                        echo "<h2 class='price-title feature-title'>Featured Meal</h2>";
+                    }else{
+                        echo "<h2 class='price-title no-feature-title'>Featured Meal</h2>";
+                    } 
+                ?> 
+            </div>
+        </div>
+        
+        <div class='order-buy-container'>
+            <?php 
+                echo "<h2 class='price-title'>".$dish[0]["price"]."円</h2>";
+            ?>
+            <input type="hidden" name="id" value="<?php echo $item[0]["id_dish"]; ?>">
+            <input class='buy-btn' type='submit' value='Add to Cart'>
+        </div>
+        </form>
+
+        
         <?php
             include "./parts/footer.php";
         ?>

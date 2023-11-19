@@ -25,7 +25,7 @@
     border: transparent .2rem solid;
 }
 
-.size-porcion:active{
+.size-porcion-selected{
     border-radius: 2rem;
     border-color: var(--clr-red);
     color: var(--clr-red);
