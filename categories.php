@@ -2,7 +2,24 @@
 
     require_once("./php/database.php");
 
-    $items = $database -> select("tb_dishes","*");
+    $items = $database -> select("tb_dishes",[
+        "[>]tb_categories"=>["id_category" => "id_category"],
+        "[>]tb_servings"=>["id_serving" => "id_serving"],
+    ],[
+        "tb_dishes.id_dish",
+        "tb_categories.category_name",
+        "tb_dishes.dish_img",
+        "tb_dishes.dish_name",
+        "tb_dishes.description",
+        "tb_dishes.featured_dish",
+        "tb_dishes.price",
+    ]);
+
+    $featured = $database -> select("tb_dishes","*",[
+
+        "featured_dish" => 1
+
+    ]);
 
 ?>
 <!DOCTYPE html>
@@ -30,24 +47,16 @@
                         <a class="btn meal-btn" href="./meal.html">Read More</a>
                     </div>
                     <!--header meal mobile-->
-                    <div class="header-category-container">
-                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
-                        <p class="title-header-category">Oyakodon</p>
-                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
-                        <a class="btn meal-btn" href="./meal.html">Read More</a>
-                    </div>
-                    <div class="header-category-container">
-                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
-                        <p class="title-header-category">Oyakodon</p>
-                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
-                        <a class="btn meal-btn" href="./meal.html">Read More</a>
-                    </div>
-                    <div class="header-category-container">
-                        <img src="./imgs/ComidaEje.png" alt="Oyakodon">
-                        <p class="title-header-category">Oyakodon</p>
-                        <p class="text-header-category">Chicken and egg harmony atop steaming rice</p>
-                        <a class="btn meal-btn" href="./meal.html">Read More</a>
-                    </div>
+                    <?php 
+                        for($i = 0; $i < 3; $i++){
+                            echo "<div class='header-category-container'>"
+                                    ."<img class='featured-img' src='./imgs/dishes-imgs/".$featured[$i]["dish_img"]."' alt='".$featured[$i]["dish_name"]."'>"
+                                    ."<p class='title-header-category'>".$featured[$i]["dish_name"]."</p>"
+                                    ."<p class='text-header-category'>".substr($featured[$i]["description"],0, 80)."...</p>"
+                                    ."<a class='btn meal-btn' href='./meal.php?id=".$featured[$i]["id_dish"]."'>Read More</a>"
+                                ."</div>";
+                        }
+                    ?>
                 </div>
             </div>
         </header>
@@ -79,16 +88,16 @@
                 foreach($items as $food){
                     echo "<section class='category-meals'>"
                         ."<button class='like-btn'><img src='./imgs/like.svg' alt='like-btn'></button>"
-                        ."<img class='meal-card-img' src='./imgs/ComidaEje.png' alt='Comida'>"
+                        ."<img class='meal-card-img' src='./imgs/dishes-imgs/".$food["dish_img"]."' alt='".$food["dish_name"]."'>"
                         ."<div class='price-category-container'>"
-                            ."<h4 class='category-meal-title'>Main dish</h4>"
+                            ."<h4 class='category-meal-title'>".$food["category_name"]."</h4>"
                             ."<div>"
                                 ."<img src='./imgs/like1.svg' alt='like-btn'>"
-                                ."<span>1000人</span>"
+                                ."<span>".$food["price"]."人</span>"
                             ."</div>" 
                         ."</div>"
                         ."<h3 class='food-title'>".$food["dish_name"]."</h3>"
-                        ."<p class='meal-info'>Fresh Raw Salmon</p>"
+                        ."<p class='meal-info'>".substr($food["description"],0,70)."...</p>"
                         ."<a class='btn meal-btn' href='./meal.php?id=".$food["id_dish"]."'>Read More</a>"
                     ."</section>";
                 }
@@ -101,7 +110,9 @@
     </main>
     <script>
         function updatePorcionSize(){
-            if(document.getElementById("size1").)
+            if(document.getElementById("size1")){
+
+            }
         }
     </script>
 </body>

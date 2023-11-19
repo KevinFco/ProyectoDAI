@@ -106,5 +106,8 @@
 
 .meal-card-img{
     display: block;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     width: min(17rem, 15rem);
+    height: min(17rem,15rem);
 }

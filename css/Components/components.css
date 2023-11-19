@@ -117,6 +117,7 @@
     padding: .6rem .8rem;
     font-weight: var(--fw-bd);
     border: var(--clr-red) 4px solid;
+    transition: .2s;
 }
 
 .meal-btn:hover{
@@ -188,6 +189,12 @@
   border: none;
   color: var(--clr-white);
   text-align: center;
+}
+
+.featured-img{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 1rem;
 }
 
 @media (max-width: 833.98px){

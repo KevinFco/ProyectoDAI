@@ -104,6 +104,9 @@
 
 .meal-info{
     margin: .3rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 4rem;
     color: var(--clr-solid-bg);
 }
 
@@ -149,4 +152,14 @@
     border: .5rem solid;
     border-radius: 3rem;
     color: var(--clr-red);
+}
+
+.no-feature-title{
+    padding: 1rem 1.5rem;
+    margin: auto;
+    font-family: var(--ff-var1);
+    border-color: var(--clr-solid-bg) ;
+    border: .5rem solid;
+    border-radius: 3rem;
+    color: var(--clr-solid-bg);
 }
