@@ -136,7 +136,7 @@
             include "./parts/footer.php";
         ?>
     </main>
-    
+    <script src="./Js/buttonup.js"></script>
     <script src="./Js/main.js"></script>
     <script src="./Js/carousel.js"></script>
 </body>

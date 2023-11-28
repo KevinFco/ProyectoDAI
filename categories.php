@@ -252,5 +252,6 @@
             .catch(err => console.log("error: "+ err));
         }
     </script>
+    <script src="./Js/buttonup.js"></script>
 </body>
 </html>

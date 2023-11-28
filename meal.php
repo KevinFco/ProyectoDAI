@@ -107,5 +107,6 @@
             include "./parts/footer.php";
         ?>
     </main>
+    <script src="./Js/buttonup.js"></script>
 </body>
 </html>
