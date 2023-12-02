@@ -117,11 +117,8 @@
             <div class="subscribe-text-container">
                 <h3 class="subscribe-title">About Washoku</h3>
                 <p>
-                    Savor the warmth of Japan with our Oyakodon,
-                    a comforting one-bowl delight. Tender chicken and softly beaten eggs, 
-                    simmered in a savory soy-based sauce, create a velvety layer over a bed of  
-                    steaming rice. Experience a taste of tradition and the 'parent and child' harmony 
-                    that makes this dish a timeless favorite.
+                At Washoku, we embrace the centuries-old culinary traditions of Japan, weaving authenticity into every dish. 
+                With a passion for preserving and sharing the essence of Japanese cuisine, our chefs meticulously craft each meal, ensuring an unforgettable journey through traditional flavors and culinary excellence. 
                 </p>
             </div>
             <div class="subscribe-apps-container">
