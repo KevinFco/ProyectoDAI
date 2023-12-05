@@ -55,23 +55,44 @@
     gap: 1rem;
 }
 
-.hero-characteristics-left{
+.hero-characteristics-left-jp{
     position: absolute;
-    text-align: center;
+    display: flex;
+    text-align: start;
     width: 15rem;
     height: 10rem;
     left: 5rem;
-    top: 48rem;
+    top: 50rem;
     color: var(--clr-white);
 }
 
+.hero-characteristics-left{
+  position: absolute;
+  text-align: center;
+  width: 15rem;
+  height: 10rem;
+  left: 5rem;
+  top: 45rem;
+  color: var(--clr-white);
+}
+
+.hero-characteristics-rigth-jp{
+    position: absolute;
+    display: flex;
+    text-align: start;
+    width: 15rem;
+    height: 10rem;
+    right: 5rem;
+    top: 49rem;
+    color: var(--clr-white);
+}
 .hero-characteristics-rigth{
     position: absolute;
     text-align: center;
     width: 15rem;
     height: 10rem;
     right: 5rem;
-    top: 48rem;
+    top: 44rem;
     color: var(--clr-white);
 }
 
@@ -173,6 +194,16 @@
     height: 40rem;
 }
 
+.subscribe-text-container-jp{
+  display: flex;
+  text-align: start;
+  height: fit-content;
+  margin-top: min(5vw, 8rem, 10rem);
+  margin-left: min(5vw, 8rem, 10rem);
+  margin-right: min(5vw, 8rem, 10rem);
+  align-items: flex-start;
+}
+
 .subscribe-text-container{
   display: grid;
   text-align: justify;
@@ -181,6 +212,7 @@
   margin-left: min(5vw, 8rem, 10rem);
   margin-right: min(5vw, 8rem, 10rem);
 }
+
 
 .subscribe-apps-container{
   display: grid;
@@ -289,4 +321,8 @@
     .hero-characteristics-rigth{
         display: none;
     }
+
+    .hero-characteristics-rigth-jp{
+      display: none;
+  }
 }

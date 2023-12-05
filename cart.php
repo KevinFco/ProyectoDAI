@@ -68,7 +68,7 @@
             echo "<div style='display: flex;gap: 5rem'>"
                     ."<h1>To pay: ".$total."円</h1>";
                     if($order_details == null || empty($order_details)){
-                        echo "<a href='categories.php'>Continue to explore</a>";
+                        echo "<a  class='btn buy-btn' href='categories.php'>Continue to explore</a>";
                     }else{
                         echo "<a class='btn buy-btn' href='submit-order.php'>Complete service</a>";
                     }

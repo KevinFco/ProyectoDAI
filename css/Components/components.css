@@ -142,6 +142,21 @@
     height: 6rem;
 }
 
+.btn-up:hover{
+  display: block;
+  position: absolute;
+  right: 3.5rem;
+  top: -2.5rem;
+  background: url(../../imgs/go-up.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0;
+  width: 7rem;
+  height: 7rem;
+  filter: brightness(1.2);
+  cursor:pointer;
+}
+
 .like-btn{
   display: block;
   position: absolute;

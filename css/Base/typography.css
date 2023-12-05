@@ -164,9 +164,16 @@
     color: var(--clr-solid-bg);
 }
 
+<<<<<<< HEAD
 .order-title{
     font-family: var(--ff-var2);
     font-size: var(--fs-lg);
     font-weight: var(--fw-bd);
     color: var(--clr-solid-bg);
+=======
+.vertical-writing
+{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+>>>>>>> b7ed37633220e6e0c82b62782393c4d6a40d8271
 }
