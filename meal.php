@@ -20,6 +20,7 @@
             "tb_dishes.description",
             "tb_dishes.featured_dish",
             "tb_dishes.price",
+            "tb_dishes.dish_name_jp",
         ],[
             "id_dish" => $_GET["id"]
         ]);
@@ -88,7 +89,7 @@
        echo "<div class='meal-meal-title-container'>"
             ."<div class='meal-names-container'>"
                 ."<button class='btn-meal-like'><img src='./imgs/btnlike 1.svg' alt=''></button>"
-                ."<h1 class='meal-meal-title'>親子丼</h1>"
+                ."<h1 class='meal-meal-title'>".$dish[0]["dish_name_jp"]."</h1>"
                 ."<h2 class='meal-title-two'>".$dish[0]["dish_name"]."</h2>"
             ."</div>"
             ."<div class='meal-info-container'>"
