@@ -2,6 +2,11 @@
 
     require_once './php/database.php';
 
+    $order_details = [];
+    $r_size = "";
+    $r_category = "";
+    $pos_array = -1;
+
     if ($_GET){
 
         $dish = $database -> select("tb_dishes",[
@@ -19,7 +24,45 @@
             "id_dish" => $_GET["id"]
         ]);
 
-    }
+        //get destination cost total
+        $order_cost = ($dish[0]["price"]);
+        // Reference: https://medoo.in/api/select
+        $registered_sizes = $database->select("tb_servings","*");
+        $registered_category = $database->select("tb_categories","*");
+
+        $r_size = $dish[0]["serving_name"];
+
+        $r_category = $dish[0]["category_name"];
+
+        $cart_details = [];
+
+        if (isset($_COOKIE['order'])) {
+            /* delete/remove a cookie
+            unset($_COOKIE['destinations']);
+            setcookie('destinations', '', time() - 3600);*/
+            $data = json_decode($_COOKIE['order'], true);
+            
+            $cart_details = $data;
+        }
+
+        $order_details["id"] = $_GET["id"];
+        $order_details["name"] = $dish[0]["dish_name"];
+        $order_details["size"] = $dish[0]["serving_name"];
+        $order_details["category"] = $dish[0]["category_name"];
+        $order_details["cost"] = $dish[0]["price"];
+        
+        //check if this is a booked destionation to update the array
+        if(isset($_GET["index"])){
+            if($_GET["index"] >= 0){
+                $cart_details[$_GET["index"]] = $order_details;
+            }
+        }else{
+            $cart_details[] = $order_details;
+        }
+        //expire in 1 hour 
+        setcookie('order', json_encode($cart_details), time()+72000);
+        
+    }   
 
 ?>
 <!DOCTYPE html>
@@ -96,6 +139,7 @@
         <div class='order-buy-container'>
             <?php 
                 echo "<h2 class='price-title'>".$dish[0]["price"]."円</h2>";
+                echo "<input type='hidden' value='".$pos_array."' name='index'>";
             ?>
             <input type="hidden" name="id" value="<?php echo $item[0]["id_dish"]; ?>">
             <input class='buy-btn' type='submit' value='Add to Cart'>

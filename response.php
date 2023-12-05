@@ -16,10 +16,21 @@
                     ]
                 ]);
             }else{
-                $items = $database->select("tb_dishes","*",[
-                    "AND"=>[
-                        "id_serving" => $decoded["size"],
-                        "id_category" => $decoded["category"]
+                $items = $database->select("tb_dishes",[
+                    "[>]tb_categories"=>["id_category" => "id_category"]
+                ],[
+                    "tb_dishes.id_dish",
+                    "tb_categories.id_category",
+                    "tb_categories.category_name",
+                    "tb_dishes.dish_img",
+                    "tb_dishes.dish_name",
+                    "tb_dishes.description",
+                    "tb_dishes.featured_dish",
+                    "tb_dishes.price",
+                ],[
+                    'AND'=>[
+                        "tb_dishes.id_serving" => $decoded["size"],
+                        "tb_dishes.id_category" => $decoded["category"]
                     ]
                 ]);
             }

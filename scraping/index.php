@@ -1,71 +1,62 @@
 <?php
-    require_once '../php/database.php';
-    
     include('simple_html_dom.php');
+
+    require_once '../php/database.php';
 
     //link
     $link = "https://livejapan.com/en/article-a0002670/";
 
-    $locations = file_get_html($link);
+    $japan = file_get_html($link);
 
-    $dishes = [];
+    $destinations = [];
     $filenames = [];
     $descriptions = [];
+    
+    //save dish names and filenames for the images
+    foreach ($japan->find('h2') as $index=>$item){
+        //stop the foreach
+        if($index == 32) break;
+        
+        $string = trim(str_get_html($item)->plaintext);
+        $strings = explode(" ", $string);
+        
+        //ramen needs to remove parenthesis
+        if($index == 18) $name = substr($strings[1], 0, strpos($strings[1], '('));
+        else $name = $strings[1];
+        $destinations[]=$name;
 
-    //save destination locations and filenames for the images
-    $int = 0;
-    foreach ($locations->find('<h2><span>') as $location){
-        if($int < 32){
-            $name = trim(str_get_html($location)->plaintext);
-            $int ++;
-            $dishes[] = $name;
-            //
-                $filename = strtolower($name);
-                $filename = str_replace($int,'', $filename);
-                $filename = str_replace(',', '', $filename);
-                $filename = str_replace('.', '', $filename);
-                $filename = str_replace(' ', '', $filename);
-                $filenames[] = $filename;
+        $filename = strtolower($name);
+        $filenames[] = $filename;
 
-            echo "<h2>".$filename."</h2>";
-        }
+        echo "<h2>".$destinations[$index]."</h2><br>";
     }
 
-    //save destination descriptions
-    $pos = -1;
-    /*foreach ($locations->find('p') as $description){
-       $pos++;
-       if($pos > 1 && $pos < 55-21){
-            $descriptions[] = trim($description->plaintext);
-            echo "<h2>".$description."</h2>";
-       }
-    }*/
+    //var_dump($filenames);
 
     //get and download destination images
-    $index = 0;
-    foreach ($locations->find('<div><img>') as $image){
-        if($image->src != ""){
-            if($index>16){
-                    if($index < 49){
-                        file_put_contents("../imgs/dishes-imgs/{$filenames[$index-17]}.jpg", file_get_contents($image->src));
-                        echo "<h2>".$image->src."</h2>";  
-                    }
-            }
-            $index++;
+    $file_index = 0;
+    foreach ($japan->find('.c-guard-image > img') as $index=>$image){
+        
+        //to not load the last image
+        if($index == 33) break;
+        
+        //to not load the first image
+        if($index > 0) {
+            $file = substr($image->src, 0, strpos($image->src, '?'));
+            file_put_contents("../imgs/dishes-imgs/".$filenames[$file_index].".jpg", file_get_contents($file));
+            $file_index++;
         }
+       
     }
-    /*for($i=0; $i<32; $i++){
-        // Reference: https://medoo.in/api/insert
-        $database->insert("tb_dishes",[
-            "id_category" => 1,
-            "id_serving" => mt_rand(1,3),
-            "dish_name"=> $dishes[$i],
-            "description"=> $descriptions[$i],
-            "featured_dish" => mt_rand(0,1),
-            "dish_img"=> $filenames[$i].".jpg",
-            "price"=> mt_rand(10,150)/10
-        ]);
-    }*/
-    
 
-?>
+    // Reference: https://medoo.in/api/update
+    $name_index = 0;
+    for($i= 22; $i < 54; $i++){
+        $database->update("tb_dishes",[
+            "dish_name"=>$destinations[$name_index],
+            "dish_img"=>$filenames[$name_index].".jpg"
+        ],[
+            "id_dish"=>$i
+        ]);
+        $name_index++;
+    }

@@ -111,3 +111,17 @@
     width: min(17rem, 15rem);
     height: min(17rem,15rem);
 }
+
+.order-meal{
+    display: flex;
+    font-family: var(--ff-var1);
+    font-size: var(--fs-sm);
+    font-weight: var(--fs-md);
+    color: var(--clr-solid-bg);
+    gap: 1rem;
+    align-items: center;
+    width: fit-content;
+    border: 0.4rem solid;
+    padding: 0.5rem;
+    border-radius: 20px;
+}

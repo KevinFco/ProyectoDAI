@@ -74,13 +74,14 @@
                             if(isset($_SESSION["isLoggedIn"])){
                                 echo "<li><a class='nav-list-link' href='profile.php'>".$_SESSION["fullname"]."</a></li>"; 
                             }else{
-                                echo "<li><a class='nav-list-link' href='./index.php'>Guesst</a></li>";
+                                echo "<li><p class='nav-list-link' href='./index.php'>Guesst</p></li>";
                             }
                         ?>
                         <li><img class="nav-list-img" src="./imgs/logo.svg" alt="Logo"></li>
                         <li><a class="nav-list-link" href="#">Locations</a></li>
                         <li><a class="nav-list-link" href="#">About</a></li>
                         <li><a class="nav-list-link" href="#">Contact Us</a></li>
+                        <li><a class="nav-list-link" href="./cart.php">My Cart</a></li>
                     </ul>
                 </nav>
                 <!--logo mobile-->

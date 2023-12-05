@@ -197,7 +197,7 @@
 
                         let categoryTitle = document.createElement("h4");
                         categoryTitle.classList.add('category-meal-title');
-                        categoryTitle.innerText =  item.id_category;
+                        categoryTitle.innerText =  item.category_name;
                         priceDiv.appendChild(categoryTitle);
 
                         let divPriceLike = document.createElement("div");
